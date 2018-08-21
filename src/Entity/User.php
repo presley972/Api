@@ -24,6 +24,7 @@ class User implements UserInterface
 
     /**
      * @Groups("user")
+     * @Groups("article.user")
      * @Groups("article")
      * @ORM\Column(type="string", length=255)
      */

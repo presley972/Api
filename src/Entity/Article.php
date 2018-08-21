@@ -19,17 +19,21 @@ class Article
 
     /**
      * @Groups("user")
+     * @Groups("article.user")
      * @Groups("article")
      * @ORM\Column(type="string", length=255)
      */
     private $title;
 
     /**
+     * @Groups("article.user")
+     * @Groups("article")
      * @ORM\Column(type="string", length=255)
      */
     private $description;
 
     /**
+     * @Groups("article.user")
      * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="articles")
      */
     private $user;
@@ -62,6 +66,7 @@ class Article
 
         return $this;
     }
+
 
     public function getUser(): ?User
     {
