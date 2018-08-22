@@ -58,7 +58,7 @@ class User implements UserInterface
     /**
      * @Groups("user")
      * @Groups("article")
-     * @ORM\OneToMany(targetEntity="App\Entity\Article", mappedBy="user")
+     * @ORM\OneToMany(targetEntity="App\Entity\Article", mappedBy="user",cascade={"persist"}) )
      */
     private $articles;
 

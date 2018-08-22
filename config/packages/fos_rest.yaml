@@ -20,4 +20,5 @@ fos_rest:
       default_format: json
     body_converter:
       enabled: true
+      validate: true
     param_fetcher_listener: true

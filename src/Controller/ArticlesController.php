@@ -42,6 +42,7 @@ class ArticlesController extends FOSRestController
     }
 
     /**
+     * @Rest\View(serializerGroups={"article.user"})
      * @Rest\Post("/articles")
      * @ParamConverter("article", converter="fos_rest.request_body")
      */
@@ -54,17 +55,22 @@ class ArticlesController extends FOSRestController
 
     }
 
+    /**
+     * @Rest\View(serializerGroups={"article.user"})
+     */
     public function putArticleAction(int $id, Request $request)
     {
 
         $tl = $request->get('title');
         $dp = $request->get('description');
         $article = $this->articlesRepository->find($id);
-        if ( $tl ){
-            $article->setTitle($tl);
-        }
-        if ( $dp ){
-            $article->setDescription($dp);
+        if ($article->getUser() == $this->getUser() or $this->isGranted('ROLE_ADMIN')) {
+            if ($tl) {
+                $article->setTitle($tl);
+            }
+            if ($dp) {
+                $article->setDescription($dp);
+            }
         }
 
         $this->em->persist($article);
@@ -72,10 +78,13 @@ class ArticlesController extends FOSRestController
         return $this->view($article);
     }
 
+
     public function deleteArticleAction(Article $article)
     {
-        $this->em->remove($article);
-        $this->em->flush();
+        if ($article->getUser() == $this->getUser() or $this->isGranted('ROLE_ADMIN')) {
+            $this->em->remove($article);
+            $this->em->flush();
+        }
     }
 
 
