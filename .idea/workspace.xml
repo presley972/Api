@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ce0f8046-6e40-41ee-a702-069afa7f1b33" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/configuration.travis.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tests/UsersControllerTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.dist" beforeDir="false" afterPath="$PROJECT_DIR$/.env.dist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
@@ -63,7 +65,7 @@
           <entry key="php" value="3046" />
           <entry key="txt" value="9" />
           <entry key="yaml" value="641" />
-          <entry key="yml" value="496" />
+          <entry key="yml" value="516" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -72,7 +74,7 @@
           <entry key="PHP" value="3046" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="XML" value="55" />
-          <entry key="YAML" value="1137" />
+          <entry key="YAML" value="1157" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -137,7 +139,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/configuration.travis.yml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -199,6 +205,7 @@
         <option value="$PROJECT_DIR$/Resources/fixtures/user.yml" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/tests/UsersControllerTest.php" />
+        <option value="$PROJECT_DIR$/configuration.travis.yml" />
       </list>
     </option>
   </component>
@@ -324,7 +331,85 @@
             <path>
               <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name=".phpunit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="prod" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="nelmioapidoc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
@@ -334,7 +419,27 @@
             <path>
               <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="translations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="var" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -375,25 +480,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534750871312</updated>
-      <workItem from="1534750873405" duration="55552000" />
+      <workItem from="1534750873405" duration="55859000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55552000" />
+    <option name="totallyTimeSpent" value="55859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22103004" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22103004" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.2878981" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2878981" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Docker" order="4" visible="true" weight="0.32866243" />
+      <window_info anchor="bottom" id="Docker" order="4" weight="0.32866243" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.329927" />
       <window_info anchor="bottom" id="Run" order="7" />
@@ -564,7 +668,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/configuration.travis.yml">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
