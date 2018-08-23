@@ -1,5 +1,14 @@
 App\Entity\User:
-  user_{1..10}:
+  user_1:
+    firstname: 'Presley'
+    lastname: 'Lupon'
+    email: 'presleylupon@gmail.com'
+    birthday: <dateTimeBetween('-100 years', '-10 years')>
+    articles (unique): ['@article_*', '@article_*']
+    roles: ['ROLE_ADMIN']
+    apiKey: '5b7e6578633a24.24107608'
+
+  user_{2..10}:
     firstname: <firstName()>
     lastname: <lastName()>
     email: <email()>

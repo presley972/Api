@@ -34,10 +34,13 @@ class UsersController extends FOSRestController
      */
     public function getUsersAction()
     {
-        $users = $this->userRepository->findAll();
+        if ($this->isGranted('ROLE_ADMIN')) {
+            $users = $this->userRepository->findAll();
 
-        return $this->view($users);
-        // "get_users"
+            return $this->view($users);
+            // "get_users"
+        }
+        return $this->view('not admin', 401);
     }
 
 
@@ -47,9 +50,13 @@ class UsersController extends FOSRestController
      */
     public function getUserAction(User $user)
     {
-        //return new JsonResponse('Not the same user');
-        return $this->view($user);
-        // "get_user"
+        if ($user == $this->getUser() or $this->isGranted('ROLE_ADMIN')) {
+
+            //return new JsonResponse('Not the same user');
+            return $this->view($user);
+            // "get_user"
+        }
+        return $this->view('not admin', 401);
     }
 
     /**
@@ -79,7 +86,7 @@ class UsersController extends FOSRestController
         }
         $this->em->persist($user);
         $this->em->flush();
-        return $this->view($user);
+        return $this->view($user, 201);
         // "post_users"
     }
 
