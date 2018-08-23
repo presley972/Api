@@ -8,7 +8,15 @@ App\Entity\User:
     roles: ['ROLE_ADMIN']
     apiKey: '5b7e6578633a24.24107608'
 
-  user_{2..10}:
+  user_2:
+    firstname: 'Giovany'
+    lastname: 'Lupon'
+    email: 'giovany@gmail.com'
+    birthday: <dateTimeBetween('-100 years', '-10 years')>
+    articles (unique): ['@article_*', '@article_*']
+    apiKey: '5b7e700e1ddfa3.65903236'
+
+  user_{3..10}:
     firstname: <firstName()>
     lastname: <lastName()>
     email: <email()>
