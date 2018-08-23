@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce0f8046-6e40-41ee-a702-069afa7f1b33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/UsersControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.dist" beforeDir="false" afterPath="$PROJECT_DIR$/.env.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/api-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api-master.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/fixtures/user.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/fixtures/user.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +50,7 @@
           <entry key="php" value="3046" />
           <entry key="txt" value="9" />
           <entry key="yaml" value="641" />
-          <entry key="yml" value="516" />
+          <entry key="yml" value="518" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -74,7 +59,7 @@
           <entry key="PHP" value="3046" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="XML" value="55" />
-          <entry key="YAML" value="1157" />
+          <entry key="YAML" value="1159" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -110,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/UsersControllerTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+            <state relative-caret-position="312">
+              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -138,10 +123,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/configuration.travis.yml">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="150">
+              <caret line="10" column="92" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -206,6 +191,7 @@
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/tests/UsersControllerTest.php" />
         <option value="$PROJECT_DIR$/configuration.travis.yml" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -480,20 +466,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534750871312</updated>
-      <workItem from="1534750873405" duration="55859000" />
+      <workItem from="1534750873405" duration="56726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55859000" />
+    <option name="totallyTimeSpent" value="56726000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22103004" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22103004" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2878981" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2878981" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -643,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/UsersControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-561">
@@ -667,10 +647,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration.travis.yml">
+    <entry file="file://$PROJECT_DIR$/tests/UsersControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="312">
+          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="92" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
         </state>
       </provider>
     </entry>

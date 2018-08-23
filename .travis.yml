@@ -8,7 +8,7 @@ before_install:
   - docker-compose exec web composer install --no-interaction
   - docker-compose ps
   - docker-compose exec web php bin/console doctrine:schema:update --force
-  - docker-compose exec web php bin/console hautelook:fixtures:load -q
+  - docker-compose exec web php bin/console hautelook:fixtures:load -q --purge-with-truncate
 
 
 script:
